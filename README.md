@@ -61,4 +61,25 @@ python app.py
 
 **Seba Mariam George**
 
-B.Tech Computer Science Engineering
+B.Tech in Computer Science (AI) Engineering
+## 📸 Screenshots
+
+### Home Page
+
+![Home Page](home.png)
+
+### Guest Portal
+
+![Guest Portal](guest_portal.png)
+
+### Booking Page
+
+![Booking Page](booking_page.png)
+
+### Reservation Confirmation
+
+![Confirmation](confirmation_page.png)
+
+### Staff Dashboard
+
+![Staff Dashboard](staff_dashboard.png)
