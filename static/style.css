@@ -1,0 +1,710 @@
+/* ====================================
+WELCOME PAGE
+==================================== */
+
+.welcome-container{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    margin:0;
+}
+
+.welcome-container h1{
+
+    color:#003366;
+
+    margin-bottom:15px;
+
+    font-size:42px;
+}
+
+.welcome-container p{
+
+    font-size:18px;
+
+    color:#555;
+
+    margin-bottom:40px;
+}
+
+/* ====================================
+PORTAL CARDS
+==================================== */
+
+.portal-cards{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+}
+
+.portal-card{
+
+    background:white;
+
+    width:300px;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0px 4px 12px rgba(0,0,0,0.15);
+
+    text-align:center;
+
+    transition:0.3s;
+}
+
+.portal-card:hover{
+
+    transform:translateY(-5px);
+}
+
+.portal-card h2{
+
+    color:#003366;
+
+    margin-bottom:15px;
+}
+
+.portal-card p{
+
+    color:#666;
+
+    margin-bottom:25px;
+
+    min-height:50px;
+}
+
+.portal-btn{
+
+    background:#003366;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    width:100%;
+}
+
+.portal-btn:hover{
+
+    background:#0055aa;
+}
+
+/* ===========================
+PORTAL PAGES
+=========================== */
+
+.welcome-container{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.portal-card{
+
+    background:white;
+
+    width:450px;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0px 4px 12px rgba(0,0,0,0.15);
+
+    text-align:center;
+}
+
+.portal-card h2{
+
+    color:#003366;
+
+    margin-bottom:20px;
+}
+
+.portal-card p{
+
+    color:#666;
+
+    margin-bottom:25px;
+
+    font-size:18px;
+}
+
+.portal-btn{
+
+    background:#003366;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    width:220px;
+}
+
+.portal-btn:hover{
+
+    background:#0055aa;
+}
+/* ====================================
+USER & STAFF PORTAL CARD
+==================================== */
+
+.welcome-container{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.portal-card{
+
+    width:450px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0px 4px 12px rgba(0,0,0,0.15);
+}
+
+.portal-card h2{
+
+    color:#003366;
+
+    margin-bottom:20px;
+}
+
+.portal-card p{
+
+    color:#666;
+
+    font-size:18px;
+
+    margin-bottom:30px;
+}
+
+.portal-btn{
+
+    background:#003366;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    padding:12px 25px;
+
+    width:220px;
+
+    font-size:16px;
+
+    cursor:pointer;
+}
+
+.portal-btn:hover{
+
+    background:#0055aa;
+}
+/* ====================================
+LOGIN & SIGNUP PAGES
+==================================== */
+
+.auth-container{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.auth-card{
+
+    width:450px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0px 4px 12px rgba(0,0,0,0.15);
+
+    text-align:center;
+}
+
+.auth-card h1{
+
+    color:#003366;
+
+    margin-bottom:30px;
+}
+
+.auth-card form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.auth-card input{
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+}
+
+.auth-card button{
+
+    background:#003366;
+
+    color:white;
+
+    border:none;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    cursor:pointer;
+}
+
+.auth-card button:hover{
+
+    background:#0055aa;
+}
+/* ====================================
+BOOKING PAGE
+==================================== */
+
+.booking-container{
+
+    width:90%;
+
+    margin:25px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,420px);
+
+    justify-content:center;
+
+    align-content:start;
+
+    gap:20px;
+
+}
+.logout-btn{
+
+    background:red;
+
+    color:#003366;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+}
+
+.logout-btn:hover{
+
+    background:#e6e6e6;
+}
+
+.booking-card h1{
+
+    text-align:center;
+
+    color:#003366;
+
+    margin-bottom:30px;
+}
+
+.booking-card h3{
+
+    color:#003366;
+
+    margin-top:20px;
+}
+
+.booking-card input,
+.booking-card select{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:10px;
+
+    margin-bottom:10px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    box-sizing:border-box;
+}
+
+.booking-card button{
+
+    width:100%;
+
+    padding:14px;
+
+    background:#003366;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    cursor:pointer;
+}
+
+.booking-card button:hover{
+
+    background:#0055aa;
+}
+/* ====================================
+STAFF DASHBOARD
+==================================== */
+
+.top-bar{
+
+    background:#003366;
+
+    color:white;
+
+    padding:15px 30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+.top-bar h2{
+
+    margin:0;
+}
+
+.logout-btn{
+
+    background:red;
+
+    color:#003366;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+}
+
+.logout-btn:hover{
+
+    background:#e6e6e6;
+}
+
+/* Dashboard */
+
+.dashboard-container{
+
+    width:90%;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0px 4px 15px rgba(0,0,0,0.15);
+}
+
+.dashboard-container h1{
+
+    text-align:center;
+
+    color:#003366;
+
+    margin-bottom:30px;
+}
+
+/* Table */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+}
+
+table th{
+
+    background:#003366;
+
+    color:white;
+
+    padding:15px;
+
+    text-align:center;
+}
+
+table td{
+
+    padding:12px;
+
+    text-align:center;
+
+    border-bottom:1px solid #ddd;
+}
+
+table tr:nth-child(even){
+
+    background:#f8f8f8;
+}
+
+table tr:hover{
+
+    background:#eef5ff;
+}
+
+/* Risk colors */
+
+.high-risk{
+
+    color:red;
+
+    font-weight:bold;
+}
+
+.medium-risk{
+
+    color:orange;
+
+    font-weight:bold;
+}
+
+.low-risk{
+
+    color:green;
+
+    font-weight:bold;
+}
+/* ====================================
+CONFIRMATION PAGE
+==================================== */
+
+.confirmation-wrapper{
+
+    min-height:85vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.confirmation-card{
+
+    width:600px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0px 4px 15px rgba(0,0,0.15);
+
+    text-align:center;
+}
+
+.confirmation-card h1{
+
+    color:#003366;
+
+    margin-bottom:15px;
+}
+
+.success-icon{
+
+    font-size:45px;
+
+    color:green;
+
+    margin:10px 0;
+}
+
+.details{
+
+    text-align:left;
+
+    margin-top:20px;
+
+    margin-bottom:25px;
+}
+
+.details p{
+
+    margin:5px 0;
+
+    font-size:16px;
+}
+.reservation-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+.reservation-card h2{
+
+    color:#0d4b91;
+
+    margin-bottom:15px;
+
+}
+
+.reservation-card p{
+
+    margin:8px 0;
+
+    font-size:18px;
+
+}
+
+
+.booking-container{
+
+    width:90%;
+
+    margin:60px auto 30px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,420px);
+
+    justify-content:center;
+
+    align-content:start;
+
+    gap:20px;
+
+}
+.booking-card{
+
+    width:380px;
+
+    background:white;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+
+    margin:10px;
+
+    min-height:unset;
+
+    height:auto;
+
+}
+
+.booking-card h2{
+
+    margin-bottom: 12px;
+    font-size: 22px;
+
+}
+
+.booking-card p{
+
+    margin: 6px 0;
+    font-size: 16px;
+    line-height: 1.4;
+
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Hotel Booking</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="top-bar">
+
+    <h2>Hotel Booking System</h2>
+
+    <a href="/">
+        <button class="logout-btn">
+            Logout
+        </button>
+    </a>
+
+</div>
+
+<div class="booking-card">
+
+    <h1>Room Reservation</h1>
+
+    <form action="/save-booking" method="POST">
+
+        <div class="section">
+
+            <h3>Guest Information</h3>
+
+            <input type="text"
+                   name="guest_name"
+                   placeholder="Full Name"
+                   required>
+
+            <input type="text"
+                   name="phone"
+                   placeholder="Contact Number"
+                   required>
+
+        </div>
+
+        <div class="section">
+
+            <h3>Stay Details</h3>
+
+            <label>Check-In Date</label>
+            <input type="date"
+                   id="checkin"
+                   name="checkin_date"
+                   min="{{ today }}"
+                   oninput="calculateDays()"
+                   required>
+           
+
+            <label>Check-Out Date</label>
+
+            <input type="date"
+                   id="checkout"
+                   name="checkout_date"
+                   oninput="calculateDays()"
+                   required>
+
+            <input type="text"
+                   id="daysStayed"
+                   placeholder="Days Stayed"
+                   readonly>
+        </div>
+
+        <div class="section">
+
+            <h3>Guests</h3>
+
+            <input type="number"
+                   name="adults"
+                   placeholder="Adults"
+                   min="1"
+                   required>
+
+            <input type="number"
+                   name="children_under3"
+                   placeholder="Children (0-3 Years)"
+                   min="0">
+
+            <input type="number"
+                   name="children_3_10"
+                   placeholder="Children (3-10 Years)"
+                   min="0">
+
+            <input type="number"
+                   name="children_above10"
+                   placeholder="Guests Above 10 Years"
+                   min="0">
+
+        </div>
+
+        <div class="section">
+
+            <h3>Pet Information</h3>
+
+            <select id="petCategory"
+                    name="pet_category"
+                    onchange="togglePet()">
+
+                <option>No Pets</option>
+
+                <option>Pet</option>
+
+                <option>Service Animal</option>
+
+                <option>Emotional Support Animal</option>
+
+            </select>
+
+            <div id="petSection">
+
+                <input type="text"
+                       name="pet_type"
+                       placeholder="Pet Type">
+
+                <p class="note">
+                    Additional charges may apply for pets.
+                </p>
+
+            </div>
+
+        </div>
+
+        <button type="submit">
+
+            Confirm Reservation
+
+        </button>
+
+    </form>
+
+</div>
+
+<script>
+
+function togglePet(){
+
+    let pet =
+    document.getElementById("petCategory").value;
+
+    let section =
+    document.getElementById("petSection");
+
+    if(pet === "No Pets"){
+
+        section.style.display = "none";
+
+    }
+    else{
+
+        section.style.display = "block";
+
+    }
+}
+
+togglePet();
+
+
+function calculateDays(){
+
+    let checkin =
+    document.getElementById("checkin").value;
+
+    let checkout =
+    document.getElementById("checkout").value;
+
+    if(checkin && checkout){
+
+        let start = new Date(checkin);
+        let end = new Date(checkout);
+
+        let difference =
+        end.getTime() - start.getTime();
+
+        let days =
+        difference / (1000 * 60 * 60 * 24);
+
+        if(days < 0){
+
+            alert(
+            "Check-Out Date must be after Check-In Date"
+            );
+
+            document.getElementById(
+            "daysStayed"
+            ).value = "";
+
+            return;
+        }
+
+        document.getElementById(
+        "daysStayed"
+        ).value = days + " Day(s)";
+    }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>My Bookings</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="top-bar">
+
+    <h2>My Reservations</h2>
+
+    <a href="/">
+        <button class="logout-btn">
+            Logout
+        </button>
+    </a>
+
+</div>
+
+<div class="booking-container">
+
+{% for booking in bookings %}
+
+    <div class="booking-card">
+
+        <h2>Reservation {{ loop.index }}</h2>
+
+        <p><strong>Guest Name:</strong> {{ booking[0] }}</p>
+
+        <p><strong>Room Number:</strong> {{ booking[1] }}</p>
+
+        <p><strong>Check-In:</strong> {{ booking[2] }}</p>
+
+        <p><strong>Check-Out:</strong> {{ booking[3] }}</p>
+
+        <p><strong>Adults:</strong> {{ booking[4] }}</p>
+
+        <p><strong>Children:</strong>
+            {{ booking[5] + booking[6] + booking[7] }}
+        </p>
+
+    </div>
+
+{% endfor %}
+
+</div>
+
+</body>
+
+</html>

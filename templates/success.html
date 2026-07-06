@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Booking Confirmed</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="top-bar">
+
+    <h2>
+        Hotel Booking Cancellation Prediction System
+    </h2>
+
+    <a href="/">
+        <button class="logout-btn">
+            Logout
+        </button>
+    </a>
+
+</div>
+
+<div class="confirmation-wrapper">
+
+    <div class="confirmation-card">
+
+        <h1>
+            Reservation Confirmed
+        </h1>
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <p>
+            Thank you for choosing our hotel.
+            Your reservation has been successfully confirmed.
+        </p>
+
+        <hr>
+
+        <div class="details">
+
+            <p>
+                <strong>Guest Name:</strong>
+                {{ guest_name }}
+            </p>
+
+            <p>
+                <strong>Room Number:</strong>
+                {{ room_number }}
+            </p>
+
+            <p>
+                <strong>Check-In:</strong>
+                {{ checkin }}
+            </p>
+
+            <p>
+                <strong>Check-Out:</strong>
+                {{ checkout }}
+            </p>
+
+            <p>
+                <strong>Total Days:</strong>
+                {{ days }}
+            </p>
+
+            <p>
+                <strong>Adults:</strong>
+                {{ adults }}
+            </p>
+
+            <p>
+                <strong>Children:</strong>
+                {{ total_children }}
+            </p>
+
+        </div>
+
+        <a href="/booking">
+
+            <button class="portal-btn">
+                Make Another Reservation
+            </button>
+
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
